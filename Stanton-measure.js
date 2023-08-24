@@ -20,3 +20,19 @@ function stantonMeasure(arr) {
 }
 
 // or
+
+function stantonMeasure(intArr) {
+  let count1 = 0;
+  let count2 = 0;
+  for(let i = 0; i<intArr.length; i++) {
+    if(intArr[i]===1) {
+      count1++;
+    }
+  }
+  for(let j = 0; j<intArr.length; j++) {
+    if(intArr[j]===count1) {
+      count2++
+    }
+  }
+  return(count2)
+}
